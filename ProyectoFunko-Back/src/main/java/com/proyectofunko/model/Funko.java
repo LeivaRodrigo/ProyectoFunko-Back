@@ -24,8 +24,10 @@ public class Funko {
 	@ManyToOne
 	@JoinColumn(name = "id_linea")
 	private Linea linea;
+	@ManyToOne
+	@JoinColumn(name = "id_lista_funko")
+	private ListaFunko listaFunko;
 
-	
 	// Setters & Getters
 	public Long getId() {
 		return id;
@@ -71,25 +73,34 @@ public class Funko {
 		this.linea = linea;
 	}
 
-	
+	public ListaFunko getListaFunko() {
+		return listaFunko;
+	}
+
+	public void setListaFunko(ListaFunko listaFunko) {
+		this.listaFunko = listaFunko;
+	}
+
 	// Constructors
 	public Funko() {
 
 	}
 
-	public Funko(String nombre, Linea linea, Integer numero, Franquicia franquicia) {
+	public Funko(String nombre, Linea linea, Integer numero, Franquicia franquicia, ListaFunko listaFunko) {
 		this.nombre = nombre;
 		this.linea = linea;
 		this.numero = numero;
 		this.franquicia = franquicia;
+		this.listaFunko = listaFunko;
 	}
 
-	public Funko(Long id, String nombre, Linea linea, Integer numero, Franquicia franquicia) {
+	public Funko(Long id, String nombre, Linea linea, Integer numero, Franquicia franquicia, ListaFunko listaFunko) {
 		this.id = id;
 		this.nombre = nombre;
 		this.linea = linea;
 		this.numero = numero;
 		this.franquicia = franquicia;
+		this.listaFunko = listaFunko;
 	}
 
 }

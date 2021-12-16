@@ -10,35 +10,35 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.repository.query.FluentQuery.FetchableFluentQuery;
-import org.springframework.stereotype.Service;
 
-import com.proyectofunko.model.Funko;
-import com.proyectofunko.repositories.FunkoRepository;
+import com.proyectofunko.model.ListaFunko;
+import com.proyectofunko.repositories.ListaFunkoRepository;
 
-@Service
-public class FunkoService implements FunkoRepository {
+public class ListaFunkoService implements ListaFunkoRepository {
 
 	@Autowired
-	private FunkoRepository funkoRepository;
+	private ListaFunkoRepository funkoRepository;
 
 	@Override
-	public List<Funko> findAll() {
-		return funkoRepository.findAll();
-	}
-
-	@Override
-	public List<Funko> findAll(Sort sort) {
-		return funkoRepository.findAll(sort);
-	}
-
-	@Override
-	public List<Funko> findAllById(Iterable<Long> ids) {
+	public List<ListaFunko> findAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Funko> List<S> saveAll(Iterable<S> entities) {
+	public List<ListaFunko> findAll(Sort sort) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<ListaFunko> findAllById(Iterable<Long> ids) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends ListaFunko> List<S> saveAll(Iterable<S> entities) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -50,19 +50,19 @@ public class FunkoService implements FunkoRepository {
 	}
 
 	@Override
-	public <S extends Funko> S saveAndFlush(S entity) {
+	public <S extends ListaFunko> S saveAndFlush(S entity) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Funko> List<S> saveAllAndFlush(Iterable<S> entities) {
+	public <S extends ListaFunko> List<S> saveAllAndFlush(Iterable<S> entities) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void deleteAllInBatch(Iterable<Funko> entities) {
+	public void deleteAllInBatch(Iterable<ListaFunko> entities) {
 		// TODO Auto-generated method stub
 
 	}
@@ -80,43 +80,43 @@ public class FunkoService implements FunkoRepository {
 	}
 
 	@Override
-	public Funko getOne(Long id) {
+	public ListaFunko getOne(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Funko getById(Long id) {
+	public ListaFunko getById(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Funko> List<S> findAll(Example<S> example) {
+	public <S extends ListaFunko> List<S> findAll(Example<S> example) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Funko> List<S> findAll(Example<S> example, Sort sort) {
+	public <S extends ListaFunko> List<S> findAll(Example<S> example, Sort sort) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Page<Funko> findAll(Pageable pageable) {
+	public Page<ListaFunko> findAll(Pageable pageable) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Funko> S save(S entity) {
+	public <S extends ListaFunko> S save(S entity) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Optional<Funko> findById(Long id) {
+	public Optional<ListaFunko> findById(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -140,7 +140,7 @@ public class FunkoService implements FunkoRepository {
 	}
 
 	@Override
-	public void delete(Funko entity) {
+	public void delete(ListaFunko entity) {
 		// TODO Auto-generated method stub
 
 	}
@@ -152,7 +152,7 @@ public class FunkoService implements FunkoRepository {
 	}
 
 	@Override
-	public void deleteAll(Iterable<? extends Funko> entities) {
+	public void deleteAll(Iterable<? extends ListaFunko> entities) {
 		// TODO Auto-generated method stub
 
 	}
@@ -164,31 +164,31 @@ public class FunkoService implements FunkoRepository {
 	}
 
 	@Override
-	public <S extends Funko> Optional<S> findOne(Example<S> example) {
+	public <S extends ListaFunko> Optional<S> findOne(Example<S> example) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Funko> Page<S> findAll(Example<S> example, Pageable pageable) {
+	public <S extends ListaFunko> Page<S> findAll(Example<S> example, Pageable pageable) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public <S extends Funko> long count(Example<S> example) {
+	public <S extends ListaFunko> long count(Example<S> example) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
-	public <S extends Funko> boolean exists(Example<S> example) {
+	public <S extends ListaFunko> boolean exists(Example<S> example) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public <S extends Funko, R> R findBy(Example<S> example, Function<FetchableFluentQuery<S>, R> queryFunction) {
+	public <S extends ListaFunko, R> R findBy(Example<S> example, Function<FetchableFluentQuery<S>, R> queryFunction) {
 		// TODO Auto-generated method stub
 		return null;
 	}

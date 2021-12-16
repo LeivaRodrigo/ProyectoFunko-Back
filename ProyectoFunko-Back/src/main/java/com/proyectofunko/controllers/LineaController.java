@@ -19,6 +19,7 @@ public class LineaController {
 	private LineaService lineaService;
 
 	@GetMapping
+	@RequestMapping("getAllLineas")
 	private ResponseEntity<List<Linea>> getAllLineas() {
 		return ResponseEntity.ok(lineaService.findAll());
 	}
